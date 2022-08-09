@@ -1,26 +1,31 @@
 import React from "react";
-
+<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+			crossorigin="anonymous"
+		/>
+import Estilo from '../style/arriba.css';
+import Arriba from '../component/Componente-Arriba/Arriba.jsx';
+import Abajo from "./componente-abajo/Abajo.jsx";
 //include images into your bundle
-import rigoImage from "../../img/rigo-baby.jpg";
+
 
 //create your first component
 const Home = () => {
 	return (
-		<div className="text-center">
-			<h1 className="text-center mt-5">Hello Rigo!</h1>
-			<p>
-				<img src={rigoImage} />
-			</p>
-			<a href="#" className="btn btn-success">
-				If you see this green button... bootstrap is working...
-			</a>
-			<p>
-				Made by{" "}
-				<a href="http://www.4geeksacademy.com">4Geeks Academy</a>, with
-				love!
-			</p>
+		<div className="container">
+			<Arriba/>
+			<div className="row">
+				<div className="col"><Abajo/></div>
+				<div className="col"><Abajo/></div>
+				<div className="col"><Abajo/></div>
+			</div>
+			
 		</div>
 	);
+		
+
 };
 
 export default Home;

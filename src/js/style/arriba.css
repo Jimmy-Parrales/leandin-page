@@ -1,0 +1,28 @@
+.boton{
+    background-color: rgb(0, 140, 255);
+    color: white;
+}
+
+
+.contenedor-boton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tabla{
+    list-style: none;
+}
+.ancho{
+    width: 200px;
+}
+
+.todo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contenedor-abajo{
+    background-color: grey;
+    color: white;
+    text-align: center;
+}
